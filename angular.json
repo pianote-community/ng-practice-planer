@@ -33,7 +33,8 @@
             "styles": [
               "src/scss/main.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "baseHref": "/ng-practice-planer/"
           },
           "configurations": {
             "production": {

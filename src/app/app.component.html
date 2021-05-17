@@ -148,7 +148,7 @@
         <div class="row pp-footer">
           <div class="col p-2 text-center"><small>
             This is a <a href="https://www.pianote.com/" target="_blank">Pianote</a> Community project.<br>
-            Developed with &lt;3 from <a href="https://github.com/JohnnyDevNull" target="_blank">Philipp John</a>.
+            <small>Developed with <fa-icon [icon]="faHeart"></fa-icon> from <a href="https://github.com/JohnnyDevNull" target="_blank">Philipp John (aka JohnnyDevNull)</a>.</small>
           </small></div>
         </div>
       </div>
@@ -156,5 +156,5 @@
   </div>
 </form>
 <button type="button" class="btn btn-primary pp-btn-dark pp-print-btn" (click)="onPrint()">Print</button>
-<button type="submit" class="btn btn-primary pp-btn-dark pp-submit-btn" form="ppForm">Backup</button>
+<button type="submit" class="btn btn-primary pp-btn-dark pp-submit-btn d-none" form="ppForm">Backup</button>
 <a #downloadAnchor class="d-none"></a>
