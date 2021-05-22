@@ -77,7 +77,7 @@
                 ></textarea>
               </div>
               <div>
-                <label for="ppPracOn" class="m-0 text-uppercase font-weight-bold">I Practiced On:</label>
+                <label class="m-0 text-uppercase font-weight-bold">I Practiced On:</label>
                 <div *ngFor="let pracWeek of days">
                   <label class="mb-0">
                     <input
@@ -100,7 +100,7 @@
               ></textarea>
             </div>
             <div class="pp-spec-item">
-              <label for="ppRef" class="m-0 text-uppercase mb-1 font-weight-bold">Reflection:</label>
+              <label class="m-0 text-uppercase mb-1 font-weight-bold">Reflection:</label>
               <div class="mb-2">
                 <label for="ppMostJoy">The thing I enjoyed practicing the most was:</label>
                 <input
@@ -120,7 +120,7 @@
                   ngModel>
               </div>
               <div class="mb-2">
-                <label for="ppRefLvl0">After practice I generally felt:</label>
+                <label>After practice I generally felt:</label>
                 <div>
                   <label *ngFor="let level of ['Happy', 'Calm', 'Accomplished']; let y = index" class="mr-2 mb-0">
                     <input
