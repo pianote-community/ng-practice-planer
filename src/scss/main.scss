@@ -7,7 +7,6 @@ html, body {
 }
 
 body {
-  -webkit-print-color-adjust: exact;
   background-color: $bgColor;
   color: $textColorDark;
 }
@@ -145,11 +144,26 @@ body {
 }
 
 @media print {
+  * {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
+
   .pp-print-btn,
   .pp-submit-btn {
     display: none;
   }
   .pp-footer {
     display: none;
+  }
+
+  // Firefox print bugfix
+  .container {
+    width: 100%;
+    max-width: 100%;
+  }
+  .col-sm-12 {
+    width: 50%;
+    max-width: 50%;
   }
 }
