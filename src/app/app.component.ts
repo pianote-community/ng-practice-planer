@@ -1,6 +1,7 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { faHeart } from '@fortawesome/free-solid-svg-icons/faHeart';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -9,6 +10,7 @@ import { faHeart } from '@fortawesome/free-solid-svg-icons/faHeart';
 })
 export class AppComponent {
   public faHeart = faHeart;
+  public version = environment.version;
 
   public days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
   public sections = ['Warm Up', 'Sight Reading', 'Songs', 'Improvisation', 'Technique'];
