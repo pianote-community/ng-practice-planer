@@ -26,7 +26,7 @@
               <span class="pp-week-name text-uppercase fw-bold">{{ week }}</span>
               <div class="pp-sections flex-grow-1">
                 <div class="pp-sec-item d-flex" *ngFor="let sec of sections; let i = index">
-                  <div class="pp-sec-item-label text-uppercase" [style.width.px]="i === 4 ? 95 : 130">{{ sec }}:</div>
+                  <div class="pp-sec-item-label text-uppercase" [ngClass]="{ 'pp-tec-width': i !== 4, 'pp-tec-width-sm': i === 4 }">{{ sec }}:</div>
                   <div class="flex-grow-1">
                     <ng-container *ngIf="i === 4; else txtInput">
                       <label class="pp-item-tec" *ngFor="let tec of techniques">
@@ -34,7 +34,7 @@
                           type="checkbox"
                           [name]="getSecItemName(week, sec, tec)"
                           [ngModel]="false"
-                        >{{ tec }}
+                        ><span>{{ tec }}</span>
                       </label>
                     </ng-container>
                     <ng-template #txtInput>
@@ -51,8 +51,8 @@
           </div>
           <div class="col-sm-12 col-md-6">
             <div class="d-flex pp-spec-item">
-              <div class="flex-fill pp-spec-left-box">
-                <div [style.height.px]="75">
+              <div class="flex-fill pp-spec-left-box pp-spec-left-box-hurry">
+                <div class="pp-spec-left-box-fhh">
                   <label for="ppHurryPrac" class="m-0">
                     <span class="text-uppercase fw-bold">Time Management:</span><br>
                     <small>If I am too busy for a full practice, I will spend 5 minutes on:</small>
@@ -61,7 +61,7 @@
                 <input type=text class="form-control form-control-sm" name="ppHurryPrac" id="ppHurryPrac">
               </div>
               <div class="flex-fill text-center">
-                <div [style.height.px]="75">
+                <div class="pp-spec-left-box-fhh">
                   <label for="ppKeySig" class="m-0 text-uppercase fw-bold">Key Signature of<br>The Week:</label>
                 </div>
                 <input

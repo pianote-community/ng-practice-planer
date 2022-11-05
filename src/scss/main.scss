@@ -50,7 +50,6 @@ body {
     padding: 3px 0;
 
     .pp-sec-item-label {
-      width: 110px;
       line-height: 31px;
     }
     .pp-item-tec {
@@ -90,7 +89,7 @@ body {
 }
 
 .pp-notes {
-  min-height: 602px;
+  min-height: 602px !important;
 }
 
 .pp-btn-accent {
@@ -143,9 +142,32 @@ body {
   right: 120px;
 }
 
+.pp-tec-width {
+  width: 130px;
+}
+
+.pp-tec-width-sm {
+  width: 95px;
+}
+
+.pp-spec-left-box-fhh {
+  height: 75px;
+}
+
+@page {
+  size: A4;
+  margin: 5mm;
+}
+
 @media print {
+  html, body {
+    width: 210mm;
+    height: 297mm;
+  }
+
   * {
     -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
     color-adjust: exact;
   }
 
@@ -165,5 +187,58 @@ body {
   .col-sm-12 {
     width: 50%;
     max-width: 50%;
+  }
+
+  :root {
+    --bs-body-font-size: 10px;
+  }
+
+  .form-control-sm {
+    min-height: unset;
+    padding: 2px 4px;
+    font-size: 10px;
+    border-radius: 4px;
+  }
+
+  .pp-sections {
+    .pp-sec-item {
+      .pp-sec-item-label {
+        line-height: 20px;
+      }
+    }
+  }
+
+  .pp-sections {
+    .pp-sec-item {
+      .pp-item-tec {
+        font-size: 6px;
+      }
+    }
+  }
+
+  .pp-tec-width {
+    width: 90px;
+  }
+
+  .pp-tec-width-sm {
+    width: 65px;
+  }
+
+  .pp-notes {
+    min-height: 432px !important;
+  }
+
+  .pp-spec-left-box-fhh {
+    height: 45px;
+  }
+
+  .pp-spec-left-box-hurry {
+    min-width: 260px;
+  }
+
+  label input[type='checkbox'],
+  label input[type='radio'],
+  label span {
+    vertical-align: middle;
   }
 }
