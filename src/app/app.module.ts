@@ -15,7 +15,6 @@ import { AppComponent } from './app.component';
     FormsModule,
     FontAwesomeModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
