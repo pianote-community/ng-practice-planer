@@ -33,13 +33,7 @@
               "src/scss/main.scss"
             ],
             "scripts": [],
-            "baseHref": "/ng-practice-planer/",
-            "vendorChunk": true,
-            "extractLicenses": false,
-            "buildOptimizer": false,
-            "sourceMap": true,
-            "optimization": false,
-            "namedChunks": true
+            "baseHref": "/ng-practice-planer/"
           },
           "configurations": {
             "production": {
@@ -49,13 +43,7 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
-              "optimization": true,
               "outputHashing": "all",
-              "sourceMap": false,
-              "namedChunks": false,
-              "extractLicenses": true,
-              "vendorChunk": false,
-              "buildOptimizer": true,
               "budgets": [
                 {
                   "type": "initial",
@@ -68,8 +56,17 @@
                   "maximumError": "4kb"
                 }
               ]
+            },
+            "development": {
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "buildOptimizer": false,
+              "sourceMap": true,
+              "optimization": false,
+              "namedChunks": true
             }
-          }
+          },
+          "defaultConfiguration": "production"
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
@@ -79,8 +76,12 @@
           "configurations": {
             "production": {
               "browserTarget": "ng-pianote-practice-planer:build:production"
+            },
+            "development": {
+              "browserTarget": "ng-pianote-practice-planer:build:development"
             }
-          }
+          },
+          "defaultConfiguration": "development"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
