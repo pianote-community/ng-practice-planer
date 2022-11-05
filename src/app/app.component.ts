@@ -19,7 +19,8 @@ export class AppComponent {
   public downloadAnchor: ElementRef | null = null;
 
   public formData = {
-    ppWeekOf: null
+    ppWeekOf: null,
+    ppYearOf: null
   };
 
   public onPrint(): void {
