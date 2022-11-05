@@ -1,6 +1,6 @@
 {
   "name": "ng-pianote-practice-planer",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "engines": {
     "node": "~16.17.0",
     "npm": "~8.15.0"
@@ -16,29 +16,29 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^14.2.8",
-    "@angular/common": "^14.2.8",
-    "@angular/compiler": "^14.2.8",
-    "@angular/core": "^14.2.8",
-    "@angular/forms": "^14.2.8",
-    "@angular/platform-browser": "^14.2.8",
-    "@angular/platform-browser-dynamic": "^14.2.8",
-    "@angular/router": "^14.2.8",
+    "@angular/animations": "^14.2.9",
+    "@angular/common": "^14.2.9",
+    "@angular/compiler": "^14.2.9",
+    "@angular/core": "^14.2.9",
+    "@angular/forms": "^14.2.9",
+    "@angular/platform-browser": "^14.2.9",
+    "@angular/platform-browser-dynamic": "^14.2.9",
+    "@angular/router": "^14.2.9",
     "@fortawesome/angular-fontawesome": "~0.11.1",
-    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/fontawesome-svg-core": "^1.3.0",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@ng-bootstrap/ng-bootstrap": "^13.1.0",
     "bootstrap": "^5.2.2",
-    "rxjs": "~7.5.0",
-    "tslib": "^2.3.0",
-    "zone.js": "~0.11.4"
+    "rxjs": "~7.5.7",
+    "tslib": "^2.4.1",
+    "zone.js": "~0.11.8"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^14.2.8",
     "@angular/cli": "^14.2.8",
-    "@angular/compiler-cli": "^14.2.8",
+    "@angular/compiler-cli": "^14.2.9",
     "@types/node": "^16.18.3",
-    "typescript": "~4.6.4"
+    "typescript": "~4.7.4"
   }
 }
